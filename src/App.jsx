@@ -16,7 +16,7 @@ function App() {
     const [sortOption, setSortOption] = React.useState('Recommended');
 
     return (
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
             <div className="app-container">
                 <Navbar
                     onSearch={setSearchQuery}

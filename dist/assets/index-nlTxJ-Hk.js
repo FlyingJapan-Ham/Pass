@@ -524,7 +524,7 @@ PERFORMANCE OF THIS SOFTWARE.
                     from { transform: translateY(100%); }
                     to { transform: translateY(0); }
                 }
-            `})]})};function u1(){const[e,t]=on.useState(""),[n,r]=on.useState(!1),[i,o]=on.useState("Recommended");return k.jsx(Fv,{children:k.jsxs("div",{className:"app-container",children:[k.jsx(i1,{onSearch:t,onFilterClick:()=>r(!0)}),k.jsx("main",{children:k.jsxs(Rv,{children:[k.jsx(yn,{path:"/",element:k.jsx(t1,{searchQuery:e,sortOption:i})}),k.jsx(yn,{path:"/wishlists",element:k.jsx(o1,{})}),k.jsx(yn,{path:"/map",element:k.jsx(a1,{})}),k.jsx(yn,{path:"/profile",element:k.jsx(s1,{})}),k.jsx(yn,{path:"/detail/:id",element:k.jsx(n1,{})})]})}),k.jsx(r1,{}),k.jsx(l1,{isOpen:n,onClose:()=>r(!1),onApply:o,currentSort:i}),k.jsx("style",{children:`
+            `})]})};function u1(){const[e,t]=on.useState(""),[n,r]=on.useState(!1),[i,o]=on.useState("Recommended");return k.jsx(Fv,{basename:"/Pass/",children:k.jsxs("div",{className:"app-container",children:[k.jsx(i1,{onSearch:t,onFilterClick:()=>r(!0)}),k.jsx("main",{children:k.jsxs(Rv,{children:[k.jsx(yn,{path:"/",element:k.jsx(t1,{searchQuery:e,sortOption:i})}),k.jsx(yn,{path:"/wishlists",element:k.jsx(o1,{})}),k.jsx(yn,{path:"/map",element:k.jsx(a1,{})}),k.jsx(yn,{path:"/profile",element:k.jsx(s1,{})}),k.jsx(yn,{path:"/detail/:id",element:k.jsx(n1,{})})]})}),k.jsx(r1,{}),k.jsx(l1,{isOpen:n,onClose:()=>r(!1),onApply:o,currentSort:i}),k.jsx("style",{children:`
                     .app-container {
                         display: flex;
                         flex-direction: column;
