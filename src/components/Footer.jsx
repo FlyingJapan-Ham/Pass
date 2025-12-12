@@ -81,16 +81,17 @@ const Footer = () => {
                 .footer-content {
                     max-width: 1200px;
                     margin: 0 auto;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 14px;
-                    padding-bottom: 14px;
+                    display: grid;
+                    grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+                    gap: 10px 14px;
+                    padding-bottom: 12px;
                     border-bottom: 1px solid #f0f0f0;
+                    align-items: center;
                 }
 
                 .footer-tab .footer-content {
-                    gap: 14px;
-                    padding-bottom: 12px;
+                    gap: 10px 14px;
+                    padding-bottom: 10px;
                 }
 
                 .footer-main {
@@ -164,18 +165,20 @@ const Footer = () => {
 
                 .footer-right {
                     display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    gap: 10px;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 8px;
                     width: 100%;
+                    flex-wrap: wrap;
                 }
 
                 .footer-links {
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
                     justify-content: flex-end;
                     align-items: center;
-                    gap: 8px;
+                    gap: 6px;
                     font-weight: 600;
                 }
 
@@ -196,8 +199,8 @@ const Footer = () => {
 
                 .footer-social {
                     display: flex;
-                    gap: 10px;
-                    flex-wrap: wrap;
+                    gap: 8px;
+                    flex-wrap: nowrap;
                     justify-content: flex-end;
                 }
 
@@ -255,6 +258,15 @@ const Footer = () => {
                     .footer-tab {
                         padding: 14px 14px calc(12px + env(safe-area-inset-bottom));
                     }
+
+                    .footer-content {
+                        grid-template-columns: 1fr;
+                        align-items: flex-start;
+                    }
+
+                    .footer-right {
+                        justify-content: flex-start;
+                    }
                 }
 
                 @media (min-width: 768px) {
@@ -263,10 +275,9 @@ const Footer = () => {
                     }
 
                     .footer-content {
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        gap: 18px;
+                        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+                        gap: 12px 16px;
+                        align-items: center;
                     }
 
                     .footer-main {
@@ -274,12 +285,12 @@ const Footer = () => {
                     }
 
                     .footer-links {
-                        gap: 12px;
+                        gap: 8px;
                     }
 
-                    .footer-right { width: auto; align-items: flex-end; }
-                    .footer-social { gap: 12px; }
-                    .social-icon { width: 40px; height: 40px; }
+                    .footer-right { width: auto; align-items: center; }
+                    .footer-social { gap: 10px; }
+                    .social-icon { width: 36px; height: 36px; }
 
                     .footer-tab {
                         padding: 20px 32px 16px;
@@ -290,8 +301,8 @@ const Footer = () => {
                     }
 
                     .footer-tab .social-icon {
-                        width: 40px;
-                        height: 40px;
+                        width: 36px;
+                        height: 36px;
                     }
                 }
             `}</style>
